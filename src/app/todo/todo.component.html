@@ -1,0 +1,5 @@
+<div [class.finished]="todo.finished">
+  <input type="checkbox" [checked]="todo.finished" (click)="todo.finished = !todo.finished" >
+  {{ todo.title }}
+  <button (click)="remove()">Delete</button>
+</div>
